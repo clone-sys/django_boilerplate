@@ -1,0 +1,8 @@
+<div class="jumbotron">
+    <h1 class="display-4">Hey {{ user.first_name|default:'guest' }}.</h1>
+    <p class="lead">This is a Django App Boilerplate</p>
+    <hr class="my-4">
+    <!-- <p>It's a portfolio site, news aggregator, blog, snippet manager and more....</p> -->
+
+    <a class="btn btn-dark btn-lg" href={% url 'dashboard' %} role="button">Learn more</a>
+</div>

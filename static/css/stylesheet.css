@@ -1,0 +1,14 @@
+@import url("../fonts/Rajdhani/Rajdhani-Medium.ttf");
+
+@font-face {
+  font-family: "Rajdhani";
+  src: url("../fonts/Rajdhani/Rajdhani-Medium.ttf");
+}
+
+body {
+  font-family: "Rajdhani";
+  background-color: #f5f2f0;
+}
+.xfont {
+  font-size: 2rem;
+}

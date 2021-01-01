@@ -1,0 +1,17 @@
+<!--users/templates/users/register.html-->
+
+{% extends 'base.html' %}
+
+{% block content %}
+{% load crispy_forms_tags %} 
+
+<h2>Register</h2>
+
+<form method="post" class="w-50">
+    {% csrf_token %}
+    {{form|crispy}}
+    <input type="submit" value="Register" class="btn btn-sm btn-dark">
+</form>
+
+<a href="{% url 'login' %}" class="btn btn-sm btn-outline-dark">Back to login</a>
+{% endblock %}
